@@ -12,8 +12,8 @@ constraint_id int,
  constraint orderby foreign key(customar_id) references customers(customer_id)
  );
  
- create table if not exists vary(
- vary_id int primary key,
+ create table if not exists products(
+ products_id int primary key,
  renuction varchar (225) not null default'food',
  order_id int,
  foreign key(order_id) references orders(order_id)
